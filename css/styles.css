@@ -112,7 +112,19 @@ text-decoration: none;
 }
 
 .site-nav-link {
+  position: relative;
+}
+
+.site-nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 48px;
+  height: 4px;
   color: var(--main-text-color);
+  background: var(--accent-color);
+  border-radius: 2px;
 }
 
 .site-nav-link:hover {
@@ -313,6 +325,7 @@ padding-bottom: 25px;
 
 .team-link:hover .team-icon-link {
   fill: var(--main-bg-color);
+   
 }
 
 .team-tumb {
@@ -575,7 +588,9 @@ img {
   box-shadow: var(--card-shadow);
 }
 
-/* Modal backdrop */
+
+
+/* Modal */
 
 .backdrop {
   position: fixed;
@@ -586,7 +601,7 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.backdrop .is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -599,5 +614,17 @@ img {
   height: 580px;
   width: 525px;
   background-color: var(--main-bg-color);
-
 }
+
+.close {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 6px 6px;
+  background-color: var(--main-bg-color);
+  
+}
+
+.close > .modal-close {
+  width: 10px; 
+  height: 10px;
+} 
