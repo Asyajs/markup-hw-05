@@ -148,7 +148,7 @@ text-decoration: none;
 .inform-link:hover {
   color: var(--accent-color);
   fill: var(--accent-color);
-  transition-property: fill; 
+  transition-property: fill color; 
   transition-duration: 250ms;
   transition-timing-function:var(--transition-timing);
 }
@@ -322,21 +322,25 @@ text-decoration: none;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition-property: background-color; 
+  transition-duration: 250ms;
+  transition-timing-function:var(--transition-timing);
 }
 
 .team-icon-link {
   fill: var(--icon-color);
+  transition-property: fill; 
+  transition-duration: 250ms;
+  transition-timing-function:var(--transition-timing);
 }
 
 .team-link:hover {
-  background:var(--accent-color);
+  background-color:var(--accent-color);
 }
 
 .team-link:hover .team-icon-link {
   fill: var(--main-bg-color);
-  transition-property: fill; 
-  transition-duration: 250ms;
-  transition-timing-function:var(--transition-timing);
+  
 }
 
 .team-tumb {
@@ -421,6 +425,9 @@ text-decoration: none;
   display: flex;
   width: 106px;
   height: 60px;
+  transition-property: fill; 
+  transition-duration: 250ms;
+  transition-timing-function:var(--transition-timing);
 }
 
 .clients-flex-item:hover {
@@ -429,9 +436,6 @@ text-decoration: none;
 
 .clients-flex-item:hover .client-link {
   fill: var(--accent-color);
-  transition-property: fill; 
-  transition-duration: 250ms;
-  transition-timing-function:var(--transition-timing);
 }
 
 /*footer*/
@@ -493,9 +497,11 @@ text-decoration: none;
   display: flex;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.1);  
+  border-radius: 50%; 
   background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;  
+  transition-timing-function:var(--transition-timing);
 }
 
 .join-flex-box:not(:last-child) {
@@ -505,18 +511,15 @@ text-decoration: none;
 
 .join-icon-link{ 
   fill: var(--main-bg-color);
- 
 }
 
 .join-link:hover {
-  background:var(--accent-color);
+  background:var(--accent-color); 
+ 
 }
 
 .join-link:hover .join-icon-link {
   fill: var(--main-bg-color);
-  transition-property: fill; 
-  transition-duration: 250ms;
-  transition-timing-function:var(--transition-timing);
 }
 
   /**portfolio**/
@@ -528,20 +531,17 @@ text-decoration: none;
   }
   
   .button-item {
-    margin-right: 10px;
-    margin-left: 10px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    background-color: var(--secondary-bg-color);
+    margin: 0 10px;
+    padding: 6px 22px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
+    background-color: var(--secondary-bg-color);
     color: var(--main-text-color);
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 22px;
-    padding-right: 22px;
+    transition-property: background-color color; 
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-timing);
   
   }
 
@@ -549,9 +549,7 @@ text-decoration: none;
     background-color: var(--accent-color);
     color: var(--main-bg-color);
     box-shadow: var(--card-shadow);
-    transition-property: color; 
-    transition-duration: 250ms;
-    transition-timing-function:var(--transition-timing);
+
   }
   
 .section {
@@ -560,7 +558,8 @@ text-decoration: none;
 }
 
 .section-descrip {
-  text-align: center;
+  padding-top: 20px;
+  text-align:start;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -568,7 +567,8 @@ text-decoration: none;
 }
 
 .section-apps {
-  text-align: center;
+  padding-bottom: 20px;
+  text-align:start;   
   font-size: 16px;
   line-height: 1.8;
   color: var(--secondary-text-color);
