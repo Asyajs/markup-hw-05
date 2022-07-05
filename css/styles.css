@@ -559,6 +559,7 @@ text-decoration: none;
 
 .section-descrip {
   padding-top: 20px;
+  padding-left: 24px;
   text-align:start;
   font-weight: 700;
   font-size: 18px;
@@ -568,6 +569,7 @@ text-decoration: none;
 
 .section-apps {
   padding-bottom: 20px;
+  padding-left: 24px;
   text-align:start;   
   font-size: 16px;
   line-height: 1.8;
